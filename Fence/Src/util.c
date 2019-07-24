@@ -103,16 +103,12 @@ void display_hit(status status_1, status status_2){
 	
 	HAL_Delay(3000);
 	
-<<<<<<< HEAD:cube_project/Fence/Src/util.c
 	// RESET
 	// rows
 	HAL_GPIO_WritePin(AN1_GPIO_Port, AN1_Pin, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(AN2_GPIO_Port, AN2_Pin, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(AN3_GPIO_Port, AN3_Pin, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(AN4_GPIO_Port, AN4_Pin, GPIO_PIN_RESET);
-=======
-	delay_ms(50);//ms:要延时的ms数
->>>>>>> upstream/master:Fence/Src/util.c
 	
 	// red leds
 	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, GPIO_PIN_RESET);
