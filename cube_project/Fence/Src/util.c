@@ -79,28 +79,33 @@ void display_hit(status status_1, status status_2){
 	HAL_GPIO_WritePin(AN4_GPIO_Port, AN4_Pin, GPIO_PIN_SET);
 	
 	
-	if(status_1 == PLAYER_1_HIT)
+	if(status_1 == PLAYER_1_HIT){
 		HAL_GPIO_WritePin(G2_GPIO_Port, G2_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(G3_GPIO_Port, G3_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(G4_GPIO_Port, G4_Pin, GPIO_PIN_SET);
-	else if(status_1 == PLAYER_1_INVALID)
+	}
+		
+	else if(status_1 == PLAYER_1_INVALID){
 		HAL_GPIO_WritePin(R2_GPIO_Port, R2_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R3_GPIO_Port, R3_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R4_GPIO_Port, R4_Pin, GPIO_PIN_SET);
+	}
 	
-	
-	if(status_2 == PLAYER_2_HIT)
+	if(status_2 == PLAYER_2_HIT){
 		HAL_GPIO_WritePin(R5_GPIO_Port, R5_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R6_GPIO_Port, R6_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R7_GPIO_Port, R7_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R8_GPIO_Port, R8_Pin, GPIO_PIN_SET);
-	else if(status_2 == PLAYER_2_INVALID)
+	}
+	
+	else if(status_2 == PLAYER_2_INVALID){
 		HAL_GPIO_WritePin(R5_GPIO_Port, R5_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R6_GPIO_Port, R6_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R7_GPIO_Port, R7_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(R8_GPIO_Port, R8_Pin, GPIO_PIN_SET);
+	}
 	
 	HAL_Delay(3000);
 	
