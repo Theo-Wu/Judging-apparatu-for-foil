@@ -15,6 +15,12 @@
 #define DOWN 168	   
 #define VOL_PLUS 144
 
+#define NOT_HIT 0;
+#define PLAYER_1_HIT 1
+#define PLAYER_2_HIT 2
+#define PLAYER_1_INVALID 3
+#define PLAYER_2_INVALID 4
+
 void continue_timing();
 
 void display();
