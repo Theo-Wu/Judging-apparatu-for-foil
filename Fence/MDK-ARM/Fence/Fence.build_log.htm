@@ -1,0 +1,137 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.39
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wu Anykis, sysu, LIC=R4HTG-VENZT-REJH3-AF2L3-UKXDQ-WVB0Q
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  F:\keil5-install\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+D:\github repository\jijian\Fence\MDK-ARM\Fence.uvprojx
+Project File Date:  07/23/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'F:\keil5-install\ARM\ARMCC\Bin'
+Build target 'Fence'
+compiling delay.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\delay.c: 2 warnings, 0 errors
+compiling main.c...
+../Inc/util.h(9): warning:  #1-D: last line of file ends without a newline
+  #define PLAYER_2_INVALID 4
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Src/main.c(110): warning:  #223-D: function "remote_operations" declared implicitly
+  			remote_operations(key);//°´?üº??ý£¬¶?????Ã¿?ö¼?Ö´??Ê²Ã´????
+../Src/main.c: 5 warnings, 0 errors
+compiling usart.c...
+compiling gpio.c...
+compiling tim.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling util.c...
+../Inc/util.h(9): warning:  #1-D: last line of file ends without a newline
+  #define PLAYER_2_INVALID 4
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\util.c(13): warning:  #1295-D: Deprecated declaration continue_timing - give arg types
+  void continue_timing();
+..\Src\util.c(15): warning:  #1295-D: Deprecated declaration display - give arg types
+  void display();
+..\Src\util.c(17): warning:  #1295-D: Deprecated declaration stop_timing - give arg types
+  void stop_timing();
+..\Src\util.c(27): error:  #20: identifier "RIGHT" is undefined
+  		case RIGHT:
+..\Src\util.c(31): error:  #20: identifier "LEFT" is undefined
+  		case LEFT:
+..\Src\util.c(35): error:  #20: identifier "UP" is undefined
+  		case UP:
+..\Src\util.c(44): error:  #20: identifier "ALIEN" is undefined
+  		case ALIEN:
+..\Src\util.c(49): error:  #20: identifier "PLAY" is undefined
+  		case PLAY:
+..\Src\util.c(83): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\util.c: 8 warnings, 5 errors
+compiling sys.c...
+sys.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "sys.h"
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+sys.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling key.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\key.c: 2 warnings, 0 errors
+compiling remote.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\remote.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+"Fence\Fence.axf" - 5 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\github repository\jijian\Fence\MDK-ARM\RTE
+  D:\keil51\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\keil51\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:33
+</pre>
+</body>
+</html>
