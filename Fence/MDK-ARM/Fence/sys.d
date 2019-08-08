@@ -1,4 +1,4 @@
-fence\sys.o: sys.c
+fence\sys.o: ..\Src\sys.c
 fence\sys.o: ../Inc/sys.h
 fence\sys.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 fence\sys.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h

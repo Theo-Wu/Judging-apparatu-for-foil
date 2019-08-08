@@ -3,7 +3,7 @@
 #include "gpio.h"
 #include "util.h"
 #include "sys.h"
-#include "delay.c"
+#include "time.c"
 
 #define POWER 162
 #define UP 98    
@@ -14,6 +14,7 @@
 #define VOL_MINUS 224 
 #define DOWN 168	   
 #define VOL_PLUS 144
+#define ZERO 66
 
 #define NOT_HIT 0;
 #define PLAYER_1_HIT 1
@@ -47,7 +48,7 @@ void remote_operations(u8 key){
 			player_1_score++;
 			display();
 			break;
-		case LEFT:
+		case DOWN:
 			player_1_score--;
 			display();
 		
@@ -67,7 +68,9 @@ void remote_operations(u8 key){
 				running = !running;
 			}
 			break;
-			
+		case ZERO:
+			set_zero();
+			break;
 	}
 }
 

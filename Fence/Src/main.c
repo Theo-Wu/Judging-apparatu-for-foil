@@ -26,7 +26,7 @@
 #include "util.h"
 #include "remote.h"
 #include "key.h"
-#include "delay.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

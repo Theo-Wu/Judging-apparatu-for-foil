@@ -32,7 +32,10 @@ fence\util.o: ../Inc/usart.h
 fence\util.o: ../Inc/gpio.h
 fence\util.o: ../Inc/util.h
 fence\util.o: ../Inc/sys.h
+fence\util.o: ../Inc/sys.h
 fence\util.o: ..\Src\delay.c
 fence\util.o: ../Inc/delay.h
 fence\util.o: ../Inc/sys.h
 fence\util.o: ../Inc/sys.h
+fence\util.o: ..\Src\time.c
+fence\util.o: ../Inc/time.h

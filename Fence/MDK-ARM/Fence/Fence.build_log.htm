@@ -22,76 +22,59 @@ Dialog DLL:      TCM.DLL V1.14.8.0
  
 <h2>Project:</h2>
 D:\github repository\jijian\Fence\MDK-ARM\Fence.uvprojx
-Project File Date:  07/23/2019
+Project File Date:  07/24/2019
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'F:\keil5-install\ARM\ARMCC\Bin'
 Build target 'Fence'
-compiling delay.c...
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-..\Src\delay.c: 2 warnings, 0 errors
-compiling main.c...
-../Inc/util.h(9): warning:  #1-D: last line of file ends without a newline
-  #define PLAYER_2_INVALID 4
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-../Src/main.c(110): warning:  #223-D: function "remote_operations" declared implicitly
-  			remote_operations(key);//°´?üº??ý£¬¶?????Ã¿?ö¼?Ö´??Ê²Ã´????
-../Src/main.c: 5 warnings, 0 errors
-compiling usart.c...
-compiling gpio.c...
-compiling tim.c...
-compiling stm32f1xx_it.c...
-compiling stm32f1xx_hal_msp.c...
 compiling util.c...
-../Inc/util.h(9): warning:  #1-D: last line of file ends without a newline
-  #define PLAYER_2_INVALID 4
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/util.h(11): warning:  #1-D: last line of file ends without a newline
+  void remote_operations(u8 key);
 ../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
   #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
 ../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
   #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
 ../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
   #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-..\Src\util.c(13): warning:  #1295-D: Deprecated declaration continue_timing - give arg types
-  void continue_timing();
-..\Src\util.c(15): warning:  #1295-D: Deprecated declaration display - give arg types
-  void display();
-..\Src\util.c(17): warning:  #1295-D: Deprecated declaration stop_timing - give arg types
-  void stop_timing();
-..\Src\util.c(27): error:  #20: identifier "RIGHT" is undefined
-  		case RIGHT:
-..\Src\util.c(31): error:  #20: identifier "LEFT" is undefined
-  		case LEFT:
-..\Src\util.c(35): error:  #20: identifier "UP" is undefined
-  		case UP:
-..\Src\util.c(44): error:  #20: identifier "ALIEN" is undefined
-  		case ALIEN:
-..\Src\util.c(49): error:  #20: identifier "PLAY" is undefined
-  		case PLAY:
-..\Src\util.c(83): warning:  #1-D: last line of file ends without a newline
+..\Src\time.c(8): warning:  #223-D: function "vUser_UART_SendString" declared implicitly
+  	vUser_UART_SendString(&huart1, uTx_Data1);
+..\Src\time.c(15): warning:  #223-D: function "vUser_UART_SendString" declared implicitly
+  	vUser_UART_SendString(&huart1, uTx_Data2);
+..\Src\time.c(18): warning:  #1-D: last line of file ends without a newline
   }
-..\Src\util.c: 8 warnings, 5 errors
-compiling sys.c...
-sys.c(1): warning:  #1-D: last line of file ends without a newline
-  #include "sys.h"
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-sys.c: 2 warnings, 0 errors
-compiling stm32f1xx_hal_gpio_ex.c...
-compiling stm32f1xx_hal_tim_ex.c...
-compiling key.c...
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
-  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
-..\Src\key.c: 2 warnings, 0 errors
+..\Src\util.c(25): warning:  #1295-D: Deprecated declaration continue_timing - give arg types
+  void continue_timing();
+..\Src\util.c(27): warning:  #1295-D: Deprecated declaration display - give arg types
+  void display();
+..\Src\util.c(29): warning:  #1295-D: Deprecated declaration stop_timing - give arg types
+  void stop_timing();
+..\Src\util.c(78): error:  #20: identifier "AN1_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(AN1_GPIO_Port, AN1_Pin, GPIO_PIN_SET);
+..\Src\util.c(78): error:  #20: identifier "AN1_Pin" is undefined
+  	HAL_GPIO_WritePin(AN1_GPIO_Port, AN1_Pin, GPIO_PIN_SET);
+..\Src\util.c(79): error:  #20: identifier "AN2_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(AN2_GPIO_Port, AN2_Pin, GPIO_PIN_SET);
+..\Src\util.c(79): error:  #20: identifier "AN2_Pin" is undefined
+  	HAL_GPIO_WritePin(AN2_GPIO_Port, AN2_Pin, GPIO_PIN_SET);
+..\Src\util.c(80): error:  #20: identifier "G1_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, GPIO_PIN_SET);
+..\Src\util.c(80): error:  #20: identifier "G1_Pin" is undefined
+  	HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, GPIO_PIN_SET);
+..\Src\util.c(81): error:  #20: identifier "R1_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, GPIO_PIN_SET);
+..\Src\util.c(81): error:  #20: identifier "R1_Pin" is undefined
+  	HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, GPIO_PIN_SET);
+..\Src\util.c(82): error:  #20: identifier "G2_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(G2_GPIO_Port, G2_Pin, GPIO_PIN_SET);
+..\Src\util.c(82): error:  #20: identifier "G2_Pin" is undefined
+  	HAL_GPIO_WritePin(G2_GPIO_Port, G2_Pin, GPIO_PIN_SET);
+..\Src\util.c(83): error:  #20: identifier "R2_GPIO_Port" is undefined
+  	HAL_GPIO_WritePin(R2_GPIO_Port, R2_Pin, GPIO_PIN_SET);
+..\Src\util.c(83): error:  #20: identifier "R2_Pin" is undefined
+  	HAL_GPIO_WritePin(R2_GPIO_Port, R2_Pin, GPIO_PIN_SET);
+..\Src\util.c: 11 warnings, 12 errors
 compiling remote.c...
 ../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
   #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
@@ -100,19 +83,45 @@ compiling remote.c...
 ../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
   #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
 ..\Src\remote.c: 3 warnings, 0 errors
-compiling stm32f1xx_hal_tim.c...
-compiling stm32f1xx_hal.c...
-compiling stm32f1xx_hal_gpio.c...
-compiling stm32f1xx_hal_uart.c...
-compiling stm32f1xx_hal_rcc.c...
-compiling stm32f1xx_hal_cortex.c...
-compiling stm32f1xx_hal_rcc_ex.c...
-compiling stm32f1xx_hal_dma.c...
-compiling stm32f1xx_hal_pwr.c...
-compiling system_stm32f1xx.c...
-compiling stm32f1xx_hal_flash.c...
-compiling stm32f1xx_hal_flash_ex.c...
-"Fence\Fence.axf" - 5 Error(s), 22 Warning(s).
+compiling delay.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\delay.c: 2 warnings, 0 errors
+compiling key.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\key.c: 2 warnings, 0 errors
+compiling main.c...
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/util.h(11): warning:  #1-D: last line of file ends without a newline
+  void remote_operations(u8 key);
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+../Src/main.c: 5 warnings, 0 errors
+compiling sys.c...
+..\Src\sys.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "sys.h"
+../Inc/sys.h(78): warning:  #1-D: last line of file ends without a newline
+  #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //????
+..\Src\sys.c: 2 warnings, 0 errors
+compiling time.c...
+..\Src\time.c(8): warning:  #223-D: function "vUser_UART_SendString" declared implicitly
+  	vUser_UART_SendString(&huart1, uTx_Data1);
+..\Src\time.c(15): warning:  #223-D: function "vUser_UART_SendString" declared implicitly
+  	vUser_UART_SendString(&huart1, uTx_Data2);
+..\Src\time.c(18): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\time.c: 3 warnings, 0 errors
+"Fence\Fence.axf" - 12 Error(s), 28 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -131,7 +140,7 @@ Package Vendor: ARM
 
    * Component: ARM::CMSIS:CORE:4.3.0
 Target not created.
-Build Time Elapsed:  00:00:33
+Build Time Elapsed:  00:00:10
 </pre>
 </body>
 </html>

@@ -31,6 +31,7 @@ fence\main.o: ../Inc/tim.h
 fence\main.o: ../Inc/usart.h
 fence\main.o: ../Inc/gpio.h
 fence\main.o: ../Inc/util.h
+fence\main.o: ../Inc/sys.h
 fence\main.o: ../Inc/remote.h
 fence\main.o: ../Inc/sys.h
 fence\main.o: ../Inc/key.h
